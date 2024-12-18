@@ -1,14 +1,44 @@
-﻿namespace _001TwoSum
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LeetCode._001TwoSum
 {
-    internal class Program
+    public class Test
     {
-        static void Main(string[] args)
+        #region Methods
+        public void Solution()
         {
+            (var nums, var target) = GetTest3();
+
             var s = new Solution();
-            var result = s.TwoSum([3,3], 9);
+            var result = s.TwoSum(nums, target);
+
             var resultString = string.Join(", ", result);
             Console.WriteLine(resultString);
         }
+
+        (int[], int) GetTest1()
+        {
+            var nums = new int[] { 2, 7, 11, 15 };
+            var target = 9;
+            return (nums, target);
+        }
+        (int[], int) GetTest2()
+        {
+            var nums = new int[] { 3, 2, 4 };
+            var target = 6;
+            return (nums, target);
+        }
+        (int[], int) GetTest3()
+        {
+            var nums = new int[] { 3, 3 };
+            var target = 6;
+            return (nums, target);
+        } 
+        #endregion
     }
 
     /*     
@@ -20,6 +50,7 @@
     */
     public class Solution
     {
+        #region Methods
         public int[] TwoSum(int[] nums, int target)
         {
             var result = new int[2];
@@ -46,7 +77,7 @@
             }
 
             return result;
-        }
+        } 
+        #endregion
     }
-
 }
