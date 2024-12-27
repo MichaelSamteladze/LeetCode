@@ -4,12 +4,7 @@
     {
         static void Main(string[] args)
         {
-            //new LeetCode._001TwoSum.Test().Solution();
-            //new LeetCode._002AddTwoNumbers.Test().Solution();
-            //new LeetCode._003LongestSubstringWithoutRepeatingCharacters.Test().Solution();
-            //new LeetCode._004MedianOfTwoSortedArrays.Test().Solution();
-            //new LeetCode._006ZigzagConversion.Test().Solution();
-            new LeetCode._007ReverseInteger.Test().Solution();
+            
         }
     }
 }

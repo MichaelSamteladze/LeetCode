@@ -1,44 +1,5 @@
 ﻿namespace LeetCode._006ZigzagConversion
-{
-    public class Test
-    {
-        #region Methods
-        public void Solution()
-        {
-            (var s, var numRows) = GetTest4();
-
-            var solution = new Solution();
-            var result = solution.Convert(s, numRows);
-            Console.WriteLine(result);            
-        }
-
-        (string , int) GetTest1()
-        {
-            var s = "PAYPALISHIRING";
-            var numRows = 3;
-            return (s, numRows);
-        }
-        (string, int) GetTest2()
-        {
-            var s = "PAYPALISHIRING";
-            var numRows = 4;
-            return (s, numRows);
-        }
-        (string, int) GetTest3()
-        {
-            var s = "AB";
-            var numRows = 1;
-            return (s, numRows);
-        }
-        (string, int) GetTest4()
-        {
-            var s = "ABCD";
-            var numRows = 2;
-            return (s, numRows);
-        }
-        #endregion
-    }
-    
+{    
     public class Solution
     {
         #region Methods

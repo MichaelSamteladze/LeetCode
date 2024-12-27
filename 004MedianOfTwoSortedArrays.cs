@@ -1,45 +1,5 @@
 ﻿namespace LeetCode._004MedianOfTwoSortedArrays
-{
-    public class Test
-    {
-        #region Methods
-        public void Solution()
-        {
-            (var nums1, var nums2) = GetTest4();
-            var result = new Solution().FindMedianSortedArrays(nums1, nums2);                
-            Console.WriteLine(result);
-        }
-
-        (int[], int[]) GetTest1()
-        {        
-            var nums1 = new int[] { 1,3 };
-            var nums2 = new int[] { 2 };
-            return (nums1, nums2);
-        }
-
-        (int[], int[]) GetTest2()
-        {
-            var nums1 = new int[] { 1, 2 };
-            var nums2 = new int[] { 3, 4 };
-            return (nums1, nums2);
-        }
-
-        (int[], int[]) GetTest3()
-        {
-            var nums1 = new int[] { 3, 5 };
-            var nums2 = new int[] { 7, 8, 9, 17, 29, 32, 45, 55 };
-            return (nums1, nums2);
-        }
-
-        (int[], int[]) GetTest4()
-        {
-            var nums1 = new int[] { 3, 5, 8, 29, 32, 45 };
-            var nums2 = new int[] { 7, 9, 17, 55 };
-            return (nums1, nums2);
-        }
-        #endregion
-    }
-    
+{        
     public class Solution
     {
         #region Methods

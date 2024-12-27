@@ -1,40 +1,5 @@
 ﻿namespace LeetCode._001TwoSum
 {
-    public class Test
-    {
-        #region Methods
-        public void Solution()
-        {
-            (var nums, var target) = GetTest3();
-
-            var s = new Solution();
-            var result = s.TwoSum(nums, target);
-
-            var resultString = string.Join(", ", result);
-            Console.WriteLine(resultString);
-        }
-
-        (int[], int) GetTest1()
-        {
-            var nums = new int[] { 2, 7, 11, 15 };
-            var target = 9;
-            return (nums, target);
-        }
-        (int[], int) GetTest2()
-        {
-            var nums = new int[] { 3, 2, 4 };
-            var target = 6;
-            return (nums, target);
-        }
-        (int[], int) GetTest3()
-        {
-            var nums = new int[] { 3, 3 };
-            var target = 6;
-            return (nums, target);
-        } 
-        #endregion
-    }
-
     /*     
         Step 1: Run for-cycle on each element in array
         Step 2: Calculate difference "diff" between target and current number from the for-cycle.

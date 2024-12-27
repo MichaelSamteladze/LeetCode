@@ -1,38 +1,5 @@
 ﻿namespace LeetCode._005LongestPalindromicSubstring
-{
-    public class Test
-    {
-        #region Methods
-        public void Solution()
-        {
-            var testString = GetTest3();
-
-            var s = new Solution();
-            var resultString = s.LongestPalindrome(testString);
-            Console.WriteLine(resultString);            
-        }
-
-        string GetTest1()
-        {
-            return "bab";
-        }
-        string GetTest2()
-        {
-            //bb - is longest palindrome
-            return "cbbd";
-        }        
-        string GetTest3()
-        {
-            //amanaplanacanalpanama - is longest palindrome
-            return "madamracecarlevelnoonrotorrefercivicradareveannaabccbahellooliviasawwaswowdeifiedwowpopstepontimeemitnotstepsabacabadabacabaannaayracecarentertennevalerevellevelamanaplanacanalpanamamoonrotorrotootnursesrunnittenitetimsaptopsstoptimsapevilolivepopneveroddorevenabacabadabacababobdaddadhannahannahlevelmadamtacocatpopstatsgoogcivicradardeifiedrotorrefernoonracecarredrummurderstepontimeemitnotstepsnitinamanaplanacanalpanamamadamkayakpopdeifiedradarevellevelmadamrotorreferradarracecarnooncivicmadamgoogwowreferradarmadamcivicwowkayaklevelrotorreferannaamanaplanacanalpanamaeveannahannahmoonrotorwowdeifiedlevelcivicstatswowkayakradarrotorracecarpopgoogwowstepontimeemitnotsteps";
-        }
-        string GetTest4()
-        {
-            return "a";
-        }
-        #endregion
-    }
-    
+{    
     public class Solution
     {
         #region Methods

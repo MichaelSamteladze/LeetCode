@@ -1,47 +1,5 @@
 ﻿namespace LeetCode._003LongestSubstringWithoutRepeatingCharacters
 {
-    public class Test
-    {
-        #region Methods
-        public void Solution()
-        {
-            var input = GetTest5();
-            var s = new Solution();
-            var result = s.LengthOfLongestSubstring(input);
-            
-            Console.WriteLine(result);
-        }
-        string GetTest1()
-        {
-            var s = "abcabcbb";
-            return s;
-        }
-        string GetTest2()
-        {
-            var s = "bbbbb";
-            return s;
-        }
-        string GetTest3()
-        {
-            var s = "pwwkew";
-            return s;
-        }
-
-        string GetTest4()
-        {
-            var s = "qwertyABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:'\",.<>?/`~qwerty";
-            return s;
-        }
-
-        string GetTest5()
-        {
-            var s = "jbpnbwwd";
-            return s;
-        }
-        #endregion
-    }
-
-    
     public class Solution
     {
         #region Methods
